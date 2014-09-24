@@ -1,18 +1,18 @@
 {
-	'width':10,
-	'height':10,
-	'tileArray':[
-		'grass','grass','grass','grass','grass','sidewalk','grass','grass','grass','grass',
-		'river','river','grass','grass','grass','sidewalk','grass','grass','grass','grass',
-		'grass','river','river','river','river','sidewalk','grass','grass','grass','grass',
-		'grass','grass','grass','grass','river','sidewalk','river','river','river','grass',
-		'grass','grass','grass','grass','grass','sidewalk','grass','grass','river','river',
-		'grass','grass','grass','grass','grass','sidewalk','grass','grass','grass','grass',
-		'grass','grass','grass','grass','grass','sidewalk','grass','grass','grass','grass',
-		'grass','grass','grass','grass','grass','sidewalk','grass','grass','grass','grass',
-		'grass','grass','grass','grass','grass','sidewalk','grass','grass','grass','grass',
-		'grass','grass','grass','grass','grass','sidewalk','grass','grass','grass','grass',
-	]
-	'collisionList'=[[0,1],[1,1],[1,2],[2,2],[3,2],[4,2],[4,3],[6,3],[7,3],[8,3],[8,4],[9,4]],
-	'objectList':[]
+	"width":10,
+	"height":10,
+	"tileArray":[
+		"grass","grass","grass","grass","grass","sidewalk","grass","grass","grass","grass",
+		"river","river","grass","grass","grass","sidewalk","grass","grass","grass","grass",
+		"grass","river","river","river","river","sidewalk","grass","grass","grass","grass",
+		"grass","grass","grass","grass","river","sidewalk","river","river","river","grass",
+		"grass","grass","grass","grass","grass","sidewalk","grass","grass","river","river",
+		"grass","grass","grass","grass","grass","sidewalk","grass","grass","grass","grass",
+		"grass","grass","grass","grass","grass","sidewalk","grass","grass","grass","grass",
+		"grass","grass","grass","grass","grass","sidewalk","grass","grass","grass","grass",
+		"grass","grass","grass","grass","grass","sidewalk","grass","grass","grass","grass",
+		"grass","grass","grass","grass","grass","sidewalk","grass","grass","grass","grass",
+	],
+	"collisionList":[[0,1],[1,1],[1,2],[2,2],[3,2],[4,2],[4,3],[6,3],[7,3],[8,3],[8,4],[9,4]],
+	"objectList":[]
 }
