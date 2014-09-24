@@ -1,0 +1,10 @@
+{
+	'map':'testMap',
+	'objectList':[
+		{'class':'User','location':[9,5],'orientation':2},
+		{'class':'Crate','location':[8,1],'orientation':0}
+	],
+	'begcleryReport':'This is a test Clercy Report',
+	'endCleryReport':'You beat the level!',
+	'collisionList':[]
+}
