@@ -8,10 +8,11 @@ SPECFICATIONS
 
  * Each map is divided into squares
    * The squares are approximately the same size as the character
+   * For the purposes of 3d modeling, each square has a side length of 1
    * Collision and pathfinding work on a per square basis
    * Click based movement
    * Need simple path finding AI
- * Clicking/right clicking will be used to talk to people, pick up items, interact with scenery etc. (raycasting)
+ * Clicking/right clicking will be used to talk to people, pick up items, interact with scenery etc.
 
 ### Levels	
 
@@ -55,7 +56,7 @@ SPECFICATIONS
  * Once you die you have to start over
  * When you open back to the page, you begin where you left off
 
-FILE HIERARCHY
+File Hierarchy
 -------------
 
  * levels
@@ -77,7 +78,7 @@ FILE HIERARCHY
  * compile.js
  * README.md
 	
-SKILLS
+Skills
 ------
 
  * Health
@@ -89,12 +90,12 @@ SKILLS
  * Strength
  * StrengthXP:
 
-GLOBAL OBJECTS
+Global Objects
 --------------
 
  * User
 
-GLOBAL FUNCTION CALLS
+Global Function Calls
 ---------------------
 
  * guid() --generates guid
@@ -115,7 +116,7 @@ GLOBAL FUNCTION CALLS
  * nextLevel()
  * playAudio(AUDIOFILENAME)
 
-GLOBAL EVENTS
+Global Events
 -------------
 
  * onMove
@@ -128,14 +129,14 @@ GLOBAL EVENTS
  * onHitTaken
  * onHitGiven
 
-Game.js example
----------------
+Example Game.js File
+--------------------
 
       {
       	"levelOrder":["level1","level2","level3"]
       }
 
-ITEM FORMAT
+Example Item
 -----------
 
       function Pizza() {
@@ -156,7 +157,7 @@ ITEM FORMAT
       Pizza.prototype.onDefend=function(){
       }
 
-MOVE FORMAT
+Example Move
 -----------
 
       {
@@ -169,7 +170,7 @@ MOVE FORMAT
       	"recurringDamage":true,
       }
 
-EXAMPLE OBJECT
+Example Object
 --------------
 
       function Fountain(options) {
@@ -211,8 +212,8 @@ EXAMPLE OBJECT
       }
 
 
-LEVEL FORMAT
-------------
+Example Level
+-------------
 
       {
          "map":"testMap",
@@ -225,8 +226,8 @@ LEVEL FORMAT
          "collisionList":[]
       }
 
-MAP FORMAT
-----------
+Example Map
+-----------
 
       {
          "width":10,
@@ -247,7 +248,7 @@ MAP FORMAT
          "objectList":[]
       }
 
-TILE FORMAT
+Tile Format
 -----------
 
 Tiles are just 100x100 png images
