@@ -66,12 +66,7 @@ FILE HIERARCHY
  * models
  * audio
  * src
-   * loader.js
-   * loadprogress.js
-   * begin.js
-   * ui.js
-   * startlevel.js
-   * save.js
+   * main.js
    * index.html
    * three.js
    * style.css
@@ -137,7 +132,7 @@ Game.js example
 ---------------
 
       {
-      	levelOrder:[level1.json,level2.json,level3.json]
+      	"levelOrder":["level1","level2","level3"]
       }
 
 ITEM FORMAT
@@ -156,20 +151,22 @@ ITEM FORMAT
       }
       Pizza.protoType.onDiscard=function(){
       }
-      Pizza.prototype.onAttack=function(){}
-      Pizza.prototype.onDefend=function(){}
+      Pizza.prototype.onAttack=function(){
+      }
+      Pizza.prototype.onDefend=function(){
+      }
 
 MOVE FORMAT
 -----------
 
       {
-      	name:’Scissor Kick’,
-      	type:’slash’,
-      	baseDamage:10,
-      	speed:3,
-      	stdDev:7,
-      	baseAccuracy:.2,
-      	recurringDamage:true,
+      	"name":"Scissor Kick",
+      	"type":"slash",
+      	"baseDamage":10,
+      	"speed":3,
+      	"stdDev":7,
+      	"baseAccuracy":.2,
+      	"recurringDamage":true,
       }
 
 EXAMPLE OBJECT
@@ -218,28 +215,36 @@ LEVEL FORMAT
 ------------
 
       {
-      	map:’thevarsity.json’,
-      	//Level specific objects
-      	startingLocation:[15,5],
-      	objectList:[{name:’objectname.json’,location:[2,2],orientation:0}],
-      	begcleryReport:”At 1:05 am Tuesday morning...”,
-      	endCleryReport:”Both victims escaped...”,
-      	collisionList=[]
+         "map":"testMap",
+         "objectList":[
+            {"class":"User","location":[9,5],"orientation":2},
+            {"class":"Crate","location":[8,1],"orientation":0}
+         ],
+         "begcleryReport":"This is a test Clercy Report",
+         "endCleryReport":"You beat the level!",
+         "collisionList":[]
       }
 
 MAP FORMAT
 ----------
 
       {
-      	width:20,
-      	height:20,
-      	tileArray:[
-      	grass.png,grass.png,grass.png,sidewalkr.png,
-      sidewalk.png,sidewalkl.png,grass.png,grass.png...
-      ]
-      collisionList=[[2,3],[5,10]]
-      //objects common to all maps
-      objectList:[{name:objectname.json,location:[2,2],orientation:0,options:{}}]
+         "width":10,
+         "height":10,
+         "tileArray":[
+            "grass","grass","grass","grass","grass","sidewalk","grass","grass","grass","grass",
+            "river","river","grass","grass","grass","sidewalk","grass","grass","grass","grass",
+            "grass","river","river","river","river","sidewalk","grass","grass","grass","grass",
+            "grass","grass","grass","grass","river","sidewalk","river","river","river","grass",
+            "grass","grass","grass","grass","grass","sidewalk","grass","grass","river","river",
+            "grass","grass","grass","grass","grass","sidewalk","grass","grass","grass","grass",
+            "grass","grass","grass","grass","grass","sidewalk","grass","grass","grass","grass",
+            "grass","grass","grass","grass","grass","sidewalk","grass","grass","grass","grass",
+            "grass","grass","grass","grass","grass","sidewalk","grass","grass","grass","grass",
+            "grass","grass","grass","grass","grass","sidewalk","grass","grass","grass","grass",
+         ],
+         "collisionList":[[0,1],[1,1],[1,2],[2,2],[3,2],[4,2],[4,3],[6,3],[7,3],[8,3],[8,4],[9,4]],
+         "objectList":[]
       }
 
 TILE FORMAT
