@@ -1,7 +1,22 @@
 Clery Action
 ============
 
-SPECFICATIONS
+Use
+---
+
+1. Install npm
+
+      sudo apt-get install npm
+
+2. Globally install uglify.js
+
+      sudo npm install uglify-js -g
+
+3. Run the following command to minify
+
+      uglifyjs -o main.js
+
+Specifications
 -------------
 
 ### World layout
@@ -57,7 +72,7 @@ SPECFICATIONS
  * When you open back to the page, you begin where you left off
 
 File Hierarchy
--------------
+--------------
 
  * levels
  * maps
@@ -95,8 +110,8 @@ Global Objects
 
  * User
 
-Global Function Calls
----------------------
+Global Functions
+----------------
 
  * guid() --generates guid
 
@@ -113,7 +128,7 @@ Global Function Calls
  * removeObject(UID)
  * placeItem(ITEMNAME,LOCATION)
  * die()
- * nextLevel()
+ * winLevel()
  * playAudio(AUDIOFILENAME)
 
 Global Events
