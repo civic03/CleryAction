@@ -12,7 +12,7 @@ Compiling
 
       ./compile.sh
 
-3. If it doesn't work, try linking nodejs to node
+3. On Ubuntu, you might need to do the following
 
       ln -s /usr/bin/nodejs /usr/bin/node
 
@@ -265,10 +265,10 @@ Example Map
                   "matrix": [1,0,0,0,0,1,0,0,0,0,1,0,2.146017551422119,4.290574073791504,0,1]
                }
          ],
-   "skybox":"clouds",
-   "collisionList":[[0,1],[1,1],[1,2],[2,2],[3,2],[4,2],[4,3],[6,3],[7,3],[8,3],[8,4],[9,4]],
-   "objectList":[]
-}
+         "skybox":"clouds",
+         "collisionList":[[0,1],[1,1],[1,2],[2,2],[3,2],[4,2],[4,3],[6,3],[7,3],[8,3],[8,4],[9,4]],
+         "objectList":[]
+      }
 
 Skybox Format
 ----------------------
