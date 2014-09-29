@@ -239,32 +239,32 @@ Example Level
 Example Map
 -----------
 
-{
-   "width":10,
-   "height":10,
-   "tileArray":[
-      "grass","grass","grass","grass","grass","sidewalk","grass","grass","grass","grass",
-      "river","river","grass","grass","grass","sidewalk","grass","grass","grass","grass",
-      "grass","river","river","river","river","sidewalk","grass","grass","grass","grass",
-      "grass","grass","grass","grass","river","sidewalk","river","river","river","grass",
-      "grass","grass","grass","grass","grass","sidewalk","grass","grass","river","river",
-      "grass","grass","grass","grass","grass","sidewalk","grass","grass","grass","grass",
-      "grass","grass","grass","grass","grass","sidewalk","grass","grass","grass","grass",
-      "grass","grass","grass","grass","grass","sidewalk","grass","grass","grass","grass",
-      "grass","grass","grass","grass","grass","sidewalk","grass","grass","grass","grass",
-      "grass","grass","grass","grass","grass","sidewalk","grass","grass","grass","grass",
-   ],
-   "lights":[
-         {
-            "uuid": "5F4D26CF-4E5A-4AF5-BD6D-C6FF27C98878",
-            "name": "PointLight 1",
-            "type": "PointLight",
-            "color": 16777215,
-            "intensity": 1,
-            "distance": 0,
-            "matrix": [1,0,0,0,0,1,0,0,0,0,1,0,2.146017551422119,4.290574073791504,0,1]
-         }
-   ],
+      {
+         "width":10,
+         "height":10,
+         "tileArray":[
+            "grass","grass","grass","grass","grass","sidewalk","grass","grass","grass","grass",
+            "river","river","grass","grass","grass","sidewalk","grass","grass","grass","grass",
+            "grass","river","river","river","river","sidewalk","grass","grass","grass","grass",
+            "grass","grass","grass","grass","river","sidewalk","river","river","river","grass",
+            "grass","grass","grass","grass","grass","sidewalk","grass","grass","river","river",
+            "grass","grass","grass","grass","grass","sidewalk","grass","grass","grass","grass",
+            "grass","grass","grass","grass","grass","sidewalk","grass","grass","grass","grass",
+            "grass","grass","grass","grass","grass","sidewalk","grass","grass","grass","grass",
+            "grass","grass","grass","grass","grass","sidewalk","grass","grass","grass","grass",
+            "grass","grass","grass","grass","grass","sidewalk","grass","grass","grass","grass",
+         ],
+         "lights":[
+               {
+                  "uuid": "5F4D26CF-4E5A-4AF5-BD6D-C6FF27C98878",
+                  "name": "PointLight 1",
+                  "type": "PointLight",
+                  "color": 16777215,
+                  "intensity": 1,
+                  "distance": 0,
+                  "matrix": [1,0,0,0,0,1,0,0,0,0,1,0,2.146017551422119,4.290574073791504,0,1]
+               }
+         ],
    "skybox":"clouds",
    "collisionList":[[0,1],[1,1],[1,2],[2,2],[3,2],[4,2],[4,3],[6,3],[7,3],[8,3],[8,4],[9,4]],
    "objectList":[]
