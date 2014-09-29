@@ -1,20 +1,20 @@
 Clery Action
 ============
 
-Use
----
+Compiling
+---------
 
-1. Install npm
+1. Install npm and nodejs
 
-      sudo apt-get install npm
+      sudo apt-get install npm nodejs
 
 2. Globally install uglify.js
 
-      sudo npm install uglify-js -g
+      sudo npm install -g grunt-cli
 
-3. Run the following command to minify
+3. Run the following command to combine files
 
-      uglifyjs -o main.js
+      uglifyjs src/three.js src/main.js -m -c -o main.js
 
 Specifications
 -------------
@@ -105,31 +105,26 @@ Skills
  * Strength
  * StrengthXP:
 
-Global Objects
---------------
-
- * User
-
 Global Functions
 ----------------
 
- * guid() --generates guid
+ * Global.guid() --generates guid
 
- * print(STRING) print out string to user’s chat window
- * giveItem(ITEMNAME)
- * removeItem(ITEMNAME)
- * checkNumOfItem(ITEMNAME)
- * getSkillBonused(SKILLNAME)
- * getSkill(SKILLNAME)
- * getSkillXP(SKILLNAME)
- * startCombat(OBJECTNAME)
- * startChat(OBJECTNAME)
- * addObject(OBJECTNAME,LOCATION,ORIENTATION)
- * removeObject(UID)
- * placeItem(ITEMNAME,LOCATION)
- * die()
- * winLevel()
- * playAudio(AUDIOFILENAME)
+ * User.print(STRING) print out string to user’s chat window
+ * User.giveItem(ITEMNAME)
+ * User.removeItem(ITEMNAME)
+ * User.checkNumOfItem(ITEMNAME)
+ * User.getSkillBonused(SKILLNAME)
+ * User.getSkill(SKILLNAME)
+ * User.getSkillXP(SKILLNAME)
+ * User.startCombat(OBJECTNAME)
+ * User.startChat(OBJECTNAME)
+ * Global.addObject(OBJECTNAME,LOCATION,ORIENTATION)
+ * Global.removeObject(UID)
+ * Global.placeItem(ITEMNAME,LOCATION)
+ * User.die()
+ * User.winLevel()
+ * Global.playAudio(AUDIOFILENAME)
 
 Global Events
 -------------
