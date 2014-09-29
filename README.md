@@ -6,15 +6,15 @@ Compiling
 
 1. Install npm and nodejs
 
-      sudo apt-get install npm nodejs
+      sudo apt-get install node-uglify nodejs
 
-2. Globally install uglify.js
+2. Run the following command to combine files
 
-      sudo npm install -g grunt-cli
+      ./compile.sh
 
-3. Run the following command to combine files
+3. If it doesn't work, try linking nodejs to node
 
-      uglifyjs src/three.js src/main.js -m -c -o main.js
+      ln -s /usr/bin/nodejs /usr/bin/node
 
 Specifications
 -------------
